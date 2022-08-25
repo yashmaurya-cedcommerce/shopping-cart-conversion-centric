@@ -1,38 +1,1257 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+/* NAVBAR CSS  */
+
+.navbarContainer
+{
   display: flex;
-  flex-direction: column;
+}
+
+
+.menuDiv
+{
+  display: none;
+  width: 0%;
+}
+
+
+.linksDiv
+{
+  display: flex;
+  width: 30%;
+  font-family: 'Neucha', cursive;
+}
+
+.linksDiv p
+{
+  width: 30%;
+  margin: auto;
+  font-size: 1.8vw;
+}
+
+.logoDiv
+{
+  text-align: center;
+  width: 40%;
+  font-family: 'Bad Script', cursive;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.logoDiv p
+{
+  font-size: 3vw;
+  width: 60%;
+  text-align: end;
+  margin: 0%;
+}
+
+.logoImageDiv
+{
+  width: 40%;
+  text-align: start;
+}
+
+.logoImageDiv img
+{
+  padding: 2%;
+  width: 30%;
+}
+
+
+.searchDiv
+{
+  width: 30%;
+}
+
+.searchBoxDiv
+{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  border-radius: 6px;
+}
+
+.searchBoxDiv input
+{
+  outline: none;
+  width: 75%;
+  border: none;
+  font-size: 1.5vw;
+  padding: 2% 2%;
+  border-radius: 0px 6px 6px 0px;
+  height: 1.5vw;
+}
+
+.searchBtn
+{
+  width: 15%;
+  border: none;
+  background-color: white;
+  font-size: 1.5vw;
+}
+
+.cartBtnNav
+{
+  width: 10%;
+  border: none;
+  background-color: white;
+  border-radius: 6px 0px 0px 6px;
+  font-size: 1.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOME PAGE CSS  */
+
+.homeContainer
+{
+  width: 100%;
+}
+
+.bannerContainer
+{
+  display: flex;
+}
+
+.bannerTextDiv
+{
+  width: 50%;
+}
+
+.bannerTextMain
+{
+  text-align: start;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 5vw;
+  width: 80%;
+  margin: auto;
+}
+
+.bannerTextSub
+{
+  text-align: start;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 1.8vw;
+  width: 80%;
+  margin: auto;
+  opacity: 60%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+.bannerBtnDiv
+{
+  width: 75%;
+  margin: auto;
+  text-align: start;
+}
+
+.startShoppingBtn
+{
+  font-size: 2vw;
+  padding: 2%;
+  color: white;
+  background-color: #28110c;
+  border: none;
+  font-family: 'Yantramanav', sans-serif;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .3s;
+  margin: 0% 2% 0% 0%;
+  width: 48%;
+}
+
+.startShoppingBtn:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.trendingBtn
+{
+  font-size: 2vw;
+  padding: 2%;
+  color: white;
+  background-color: #212529;
+  border: none;
+  font-family: 'Yantramanav', sans-serif;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .3s;
+  margin: 0% 0% 0% 2%;
+  width: 48%;
+}
+
+
+
+
+
+
+.bannerImageDiv
+{
+  width: 50%;
+  text-align: start;
+  position: relative;
+}
+
+.bannerImageDiv img
+{
+  width: 60%;
+  border-radius: 8px;
+}
+
+.imageOverlayText
+{
+  margin-left: -8%;
+  position: absolute;
+  width: 50%;
+  padding: 3%;
+  font-size: 3vw;
+  font-weight: 500;
+  bottom: 10%;
+  background-color: rgb(255, 255, 255, 0.6);
+  /* background-color: rgb(196, 73, 102, 0.6); */
+  font-family: 'Yantramanav', sans-serif;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 8px;
+}
+
+.imageOverlayText2
+{
+  margin-left: 40%;
+  /* margin-right: -10%; */
+  position: absolute;
+  width: 40%;
+  padding: 3%;
+  font-size: 2vw;
+  font-weight: 500;
+  top: 5%;
+  background-color: rgb(255, 255, 255, 0.6);
+  /* background-color: rgb(196, 73, 102, 0.6); */
+  font-family: 'Yantramanav', sans-serif;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GROUP CONTAINER CSS  */
+
+.groupContainer
+{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #f2eee3;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.sideImageDiv
+{
+  width: 30%;
+  padding: 3%;
+}
+
+.sideImageDiv img
+{
+  width: 100%;
+}
+
+
+.categoriesDiv
+{
+  width: 70%;
+  padding: 2%;
+  text-align: start;
+}
+
+#carouselExampleControls1
+{
+  padding: 2%;
+  background-color: rgb(40, 17, 12, 0.8);
+  border-radius: 6px;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.carouselHeader
+{
+  font-size: 2.5vw;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bold;
+  margin: 3% 0%;
+}
+
+.row
+{
+  display: flex;
+}
+
+.colDiv
+{
+  width: 25%;
+}
+
+.productNameCaro
+{
+  font-size: 2vw;
+  font-family: 'Yantramanav', sans-serif;
+  padding: 0%;
+  margin: 0%;
+}
+
+.priceDivCaro
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.mrpCaro
+{
+  font-size: 1.7vw;
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.actualPrice
+{
+  font-size: 1.7vw;
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.colDiv img
+{
+  width: 100%;
+  border-radius: 4px;
+  height: 20vw;
+}
+
+
+
+
+
+
+
+
+/* ALL PRODUCTS DIV CSS  */
+
+.productsContainer
+{
+  width: 100%;
+}
+
+.mainProductsContainer
+{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productDiv
+{
+  width: 20%;
+  margin: 2% 2.5%;
+  padding: 1%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 6px;
+}
+
+.productImage img
+{
+  width: 100%;
+  height: 25vw;
+  border-radius: 6px;
+}
+
+.productDetails
+{
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.prodName 
+{
+  font-size: 2vw;
+  font-weight: bolder;
+  margin: 5% 0%;
+}
+
+.prodPriceDiv
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5vw;
+  background-color: #28110c;
+  color: white;
+  margin: 5% 0%;
+  padding: 5%;
+  border-radius: 4px;
+}
+
+.prodPriceDiv p
+{
+  margin: 0%;
+}
+
+
+.prodMaterialDiv
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5vw;
+  margin: 5% 0%;
+  padding: 5%;
+  border-radius: 4px;
+  font-weight: bolder;
+}
+
+.prodMaterialDiv p
+{
+  margin: 0%;
+}
+
+.addToCartBtn
+{
+  width: 100%;
+  font-size: 1.6vw;
+  background-color: #28110c;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.addToCartBtn:hover
+{
+  background-color: #493631;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+
+
+
+
+
+
+
+
+.cartTable
+{
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.cartTable th
+{
+  font-size: 2.5vw;
+  font-weight: bolder;
+  padding: 3% 0%;
+}
+
+.cartImage {
+  width: 10%;
+}
+
+.quantBtn
+{
+  cursor: pointer;
+  background-color: #2e1711;
+  color: white;
+  margin: 0% 1%;
+  border-radius: 4px;
+  font-size: 3vw;
+}
+
+.emptyCartBtnDiv
+{
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.cartTableHeaderDiv
+{
+  display: flex;
+  justify-content: space-between;
+  background-color: #28110c;
+  padding: 2%;
+}
+
+.cartTableHeaderDiv h3
+{
+  font-size: 3vw;
+}
+
+.cartTableHeaderDiv button
+{
+  border: none;
+  color: white;
+  background-color: #28110c;
+  font-size: 3vw;
+}
+
+
+
+.cartBadgeDiv
+{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 15%;
+}
+
+
+.cartBadgeBtn
+{
+  position: relative;
+  background-color: #2e1711;
+  color: white;
+  border: none;
+  font-size: 3vw;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+.totalTr
+{
+  background-color: #28110c;
+  color: white;
+}
+
+
+.cartTableProductName
+{
+  width: 20%;
+  font-size: 2.5vw;
+}
+
+.cartTableProductMAterial
+{
+  width: 10%;
+  font-size: 2.5vw;
+}
+
+.cartTableProductPrice
+{
+  width: 15%;
+  font-size: 3vw;
+}
+
+.cartTableProductQuant
+{
+  width: 30%;
+  margin: auto;
+}
+
+.quantFlex
+{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3vw;
+}
+
+.cartTableProductTotal
+{
+  font-size: 3vw;
+}
+
+.emptyCartMsgDiv
+{
+  width: 100%;
+}
+
+.emptyGIF
+{
+  width: 40%;
+  margin: 0% 30%;
+  /* margin: auto; */
+  text-align: center;
+}
+
+.emptyCartMsgDiv p
+{
+  font-size: 3vw;
+  font-family: 'Yantramanav', sans-serif;
+  margin: 2% 30%;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+
+
+
+
+  /* HOME CONTAINER CSS  */
+
+
+  .homeContainer
+  {
+    width: 95%;
+    margin: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bannerContainer
+  {
+    display: block;
   }
+
+  .bannerTextDiv
+  {
+    width: 70%;
+    margin: auto;
+  }
+
+  .bannerTextMain
+  {
+    text-align: start;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 7vw;
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+  }
+
+.bannerTextSub
+{
+  text-align: start;
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 4vw;
+  width: 80%;
+  margin: auto;
+  opacity: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+.bannerBtnDiv
+{
+  width: 100%;
+  margin: 10% 0%;
+  text-align: start;
+  
+}
+
+.startShoppingBtn
+{
+  font-size: 4vw;
+  padding: 2%;
+  color: white;
+  background-color: #28110c;
+  border: none;
+  font-family: 'Yantramanav', sans-serif;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .3s;
+  margin: 0% 2% 0% 0%;
+  width: 48%;
+}
+
+.startShoppingBtn:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.trendingBtn
+{
+  font-size: 4vw;
+  padding: 2%;
+  color: white;
+  background-color: #212529;
+  border: none;
+  font-family: 'Yantramanav', sans-serif;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .3s;
+  margin: 0% 0% 0% 2%;
+  width: 48%;
+}
+
+
+
+
+
+
+.bannerImageDiv
+{
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.bannerImageDiv img
+{
+  width: 60%;
+  border-radius: 8px;
+}
+
+.imageOverlayText
+{
+  margin-left: 0%;
+  position: absolute;
+  width: 45%;
+  padding: 3%;
+  font-size: 4.5vw;
+  font-weight: bolder;
+  bottom: 10%;
+  background-color: rgb(255, 255, 255, 0.8);
+  /* background-color: rgb(196, 73, 102, 0.6); */
+  font-family: 'Yantramanav', sans-serif;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 8px;
+}
+
+.imageOverlayText2
+{
+  margin-left: 55%;
+  /* margin-right: -10%; */
+  position: absolute;
+  width: 40%;
+  padding: 3%;
+  font-size: 4vw;
+  font-weight: bolder;
+  top: 5%;
+  background-color: rgb(255, 255, 255, 0.7);
+  /* background-color: rgb(196, 73, 102, 0.6); */
+  font-family: 'Yantramanav', sans-serif;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+  /* GROUP CONTAINER CSS  */
+
+  .groupContainer
+  {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #f2eee3;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .sideImageDiv
+  {
+    width: 40%;
+    padding: 3%;
+  }
+
+  .sideImageDiv img
+  {
+    width: 100%;
+  }
+
+
+  .categoriesDiv
+  {
+    width: 60%;
+    padding: 2%;
+    text-align: start;
+  }
+
+  #carouselExampleControls1
+  {
+    padding: 2%;
+    background-color: rgb(40, 17, 12, 0.8);
+    border-radius: 6px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+
+  .carouselHeader
+  {
+    font-size: 5vw;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: bold;
+    margin: 2% 0%;
+  }
+
+  .row
+  {
+    display: flex;
+  }
+
+  .colDiv
+  {
+    width: 50%;
+  }
+
+  .productNameCaro
+  {
+    font-size: 3.5vw;
+    font-weight: bolder;
+    font-family: 'Yantramanav', sans-serif;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .priceDivCaro
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mrpCaro
+  {
+    font-size: 2.5vw;
+    font-weight: bolder;
+    font-family: 'Yantramanav', sans-serif;
+  }
+
+  .actualPrice
+  {
+    font-size: 2.5vw;
+    font-weight: bolder;
+    font-family: 'Yantramanav', sans-serif;
+  }
+
+  .colDiv img
+  {
+    width: 100%;
+    border-radius: 4px;
+    height: 20vw;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /* ALL PRODUCTS DIV CSS  */
+
+.productsContainer
+{
+  width: 100%;
+}
+
+.mainProductsContainer
+{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productDiv
+{
+  width: 45%;
+  margin: 2% 2.5%;
+  padding: 1%;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 6px;
+}
+
+.productImage img
+{
+  width: 100%;
+  height: 50vw;
+  border-radius: 6px;
+}
+
+.productDetails
+{
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.prodName 
+{
+  font-size: 5vw;
+  font-weight: bolder;
+  margin: 5% 0%;
+}
+
+.prodPriceDiv
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 4vw;
+  background-color: #28110c;
+  color: white;
+  margin: 5% 0%;
+  padding: 5%;
+  border-radius: 4px;
+}
+
+.prodPriceDiv p
+{
+  margin: 0%;
+}
+
+
+.prodMaterialDiv
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 4vw;
+  margin: 5% 0%;
+  padding: 5%;
+  border-radius: 4px;
+  font-weight: bolder;
+}
+
+.prodMaterialDiv p
+{
+  margin: 0%;
+}
+
+.addToCartBtn
+{
+  width: 100%;
+  font-size: 4vw;
+  background-color: #28110c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cartTable
+{
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 3.5vw;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.cartTable th
+{
+  font-size: 4vw;
+  font-weight: bolder;
+  padding: 3% 0%;
+}
+
+
+
+.emptyCartBtnDiv
+{
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.cartTableHeaderDiv
+{
+  display: flex;
+  justify-content: space-between;
+  background-color: #28110c;
+  padding: 3%;
+}
+
+.cartTableHeaderDiv h3
+{
+  font-size: 5vw;
+}
+
+.cartTableHeaderDiv button
+{
+  border: none;
+  color: white;
+  background-color: #28110c;
+  font-size: 5vw;
+}
+
+
+
+
+
+
+.menuDiv
+{
+  display: block;
+  width: 30%;
+}
+
+
+.linksDiv
+{
+  display: none;
+  width: 0%;
+  font-family: 'Neucha', cursive;
+}
+
+.linksDiv p
+{
+  width: 0%;
+  margin: auto;
+  font-size: 1.8vw;
+}
+
+
+.logoDiv
+{
+  text-align: center;
+  width: 40%;
+  font-family: 'Bad Script', cursive;
+  display: flex;
+  align-items: center;
+}
+
+.logoDiv p
+{
+  font-size: 4.8vw;
+  width: 60%;
+  text-align: end;
+  margin: 0%;
+}
+
+.logoImageDiv
+{
+  width: 40%;
+  text-align: start;
+}
+
+.logoImageDiv img
+{
+  padding: 2%;
+  width: 50%;
+}
+
+
+.searchDiv
+{
+  width: 30%;
+}
+
+.searchBoxDiv
+{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  border-radius: 6px;
+}
+
+.searchBoxDiv input
+{
+  outline: none;
+  width: 75%;
+  border: none;
+  font-size: 3vw;
+  padding: 2% 2%;
+  border-radius: 0px 6px 6px 0px;
+  height: 5vw;
+}
+
+.searchBtn
+{
+  width: 15%;
+  border: none;
+  background-color: white;
+  font-size: 3vw;
+}
+
+.cartBtnNav
+{
+  display: none;
+  width: 10%;
+  border: none;
+  background-color: white;
+  border-radius: 6px 0px 0px 6px;
+  font-size: 3vw;
+}
+
+
+
+.cartBadgeDiv
+{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 20%;
+}
+
+
+.cartBadgeBtn
+{
+  position: relative;
+  background-color: #2e1711;
+  color: white;
+  border: none;
+  font-size: 5vw;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.totalTr
+{
+  background-color: #28110c;
+  color: white;
+}
+
+
+.cartTableProductName
+{
+  width: 20%;
+  font-size: 4vw;
+}
+
+.cartTableProductMAterial
+{
+  width: 10%;
+  font-size: 4vw;
+}
+
+.cartTableProductPrice
+{
+  width: 15%;
+  font-size: 5vw;
+}
+
+.cartTableProductQuant
+{
+  width: 30%;
+  margin: auto;
+}
+
+.quantFlex
+{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 5vw;
+}
+
+.cartTableProductTotal
+{
+  font-size: 5vw;
+}
+
+.emptyCartMsgDiv
+{
+  width: 100%;
+}
+
+.emptyGIF
+{
+  width: 40%;
+  margin: 0% 30%;
+  /* margin: auto; */
+  text-align: center;
+}
+
+.emptyCartMsgDiv p
+{
+  font-size: 5vw;
+  font-family: 'Yantramanav', sans-serif;
+  margin: 2% 20%;
+  text-align: center;
+  font-weight: bold;
+}
+
+
 }
